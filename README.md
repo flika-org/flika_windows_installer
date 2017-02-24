@@ -9,7 +9,6 @@
 
 ![Download Repository](img/download repo.gif)
 
-
 3. (optional) If you want to use a Python virtual environment, open a command prompt, navigate to the newly downloaded folder, and run the following commands
 
 	```
