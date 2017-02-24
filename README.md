@@ -13,3 +13,4 @@
 	Scripts\activate.bat
 	```
 4. Run the install_flika.bat file. The install should take <5 minutes.
+![Download Repository](img/install_flika.gif)
