@@ -13,10 +13,10 @@ This installer only works with Python 3.5. Install Python 3.5. To install Python
 ####3. (optional) Set up virtual environment.  ####
 If you want to use a Python virtual environment, open a command prompt, navigate to the newly downloaded folder, and run the following commands
 
-	```
-	python -m venv .
-	Scripts\activate.bat
-	```
+```
+python -m venv .
+Scripts\activate.bat
+```
 
 ####4. Run the install_flika.bat file.  ####
 The install should take <7 minutes.
