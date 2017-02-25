@@ -11,6 +11,8 @@ filenames = [numpy_fn, scipy_fn, pyqt4_fn]
 filenames_long = ['binary_dependencies\\'+fn for fn in filenames]
 urls = ["https://dl.dropboxusercontent.com/u/78754747/binary_dependencies/"+fn for fn in filenames]
 
+if not os.path.isdir('binary_dependencies'):
+    os.mkdir('binary_dependencies')
 for i in range(len(names)):
     try:
         exec("import {}".format(names[i]))
