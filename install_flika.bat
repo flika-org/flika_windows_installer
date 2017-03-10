@@ -7,7 +7,7 @@ SET /p VERSION=<output
 ECHO %VERSION%
 IF "%VERSION%" == "3.5" (
 	python download_binaries.py
-	pip install qtpy pyqtgraph xmltodict ipython zmq ipykernel qtconsole pyopengl nd2reader tifffile openpyxl matplotlib
+	pip install qtpy pyqtgraph xmltodict ipython zmq ipykernel qtconsole pyopengl nd2reader openpyxl
 	python download_flika.py
 	python flika/flika.py
 ) ELSE (
