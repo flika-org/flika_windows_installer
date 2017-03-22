@@ -9,7 +9,7 @@ IF "%VERSION%" == "3.5" (
 	python download_binaries.py
 	pip install qtpy pyqtgraph xmltodict ipython zmq ipykernel qtconsole pyopengl nd2reader openpyxl matplotlib
 	python download_flika.py
-	python flika/flika.py
+	python flika
 ) ELSE (
 	ECHO This install script requires Python 3.5. Your version of python is %VERSION%. Flika install Failed.
 )
