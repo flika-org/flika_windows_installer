@@ -1,4 +1,4 @@
-## Flika ##
+## flika ##
 ### How to install Flika on Windows ###
 
 #### 1. Install Python
