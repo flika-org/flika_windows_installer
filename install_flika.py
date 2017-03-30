@@ -4,6 +4,9 @@ import pip
 
 version = sys.version_info
 pyver = "{}{}".format(version.major, version.minor)
+if version.major != 3 or version.minor not in [5, 6]:
+	print("This install script requires Python 3.5 or 3.6. Your version of python is {}.{}. Flika install Failed.".format(version.major, version.minor))
+	sys.exit()
 
 numpy_fn  = "numpy-1.12.1+mkl-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
 scipy_fn  = "scipy-0.19.0-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
@@ -25,3 +28,5 @@ for i in range(len(names)):
             os.rename(local_filename,filenames_long[i])
             print("{} downloaded successfully".format(names[i]))
         pip.main(['install', filenames_long[i]])
+
+pip.main(['install', 'flika'])

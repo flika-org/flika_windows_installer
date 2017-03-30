@@ -1,1 +1,1 @@
-python flika
+flika
