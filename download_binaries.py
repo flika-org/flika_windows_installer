@@ -2,14 +2,14 @@ from urllib.request import urlretrieve
 import os, sys
 import pip
 
+version = sys.version_info
+pyver = "{}{}".format(version.major, version.minor)
 
-numpy_fn  = "numpy-1.12.0+mkl-cp35-cp35m-win_amd64.whl"
-scipy_fn  = "scipy-0.19.0rc2-cp35-cp35m-win_amd64.whl"
-pyqt4_fn = "PyQt4-4.11.4-cp35-cp35m-win_amd64.whl"
-skimage_fn = "scikit_image-0.13.dev0-cp35-cp35m-win_amd64.whl"
-tifffile_fn = "tifffile-2017.1.12-cp35-cp35m-win_amd64.whl"
-names = ['numpy', 'scipy', 'PyQt4', 'skimage', 'tifffile']
-filenames = [numpy_fn, scipy_fn, pyqt4_fn, skimage_fn, tifffile_fn]
+numpy_fn  = "numpy-1.12.1+mkl-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
+scipy_fn  = "scipy-0.19.0-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
+skimage_fn = "scikit_image-0.13.0-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
+names = ['numpy', 'scipy', 'skimage']
+filenames = [numpy_fn, scipy_fn, skimage_fn]
 filenames_long = ['binary_dependencies\\'+fn for fn in filenames]
 urls = ["https://dl.dropboxusercontent.com/u/78754747/binary_dependencies/"+fn for fn in filenames]
 
