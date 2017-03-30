@@ -11,8 +11,9 @@ if version.major != 3 or version.minor not in [5, 6]:
 numpy_fn  = "numpy-1.12.1+mkl-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
 scipy_fn  = "scipy-0.19.0-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
 skimage_fn = "scikit_image-0.13.0-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
-names = ['numpy', 'scipy', 'skimage']
-filenames = [numpy_fn, scipy_fn, skimage_fn]
+sklearn_fn = "scikit_learn-0.18.1-cp{0}-cp{0}m-win_amd64.whl".format(pyver)
+names = ['numpy', 'scipy', 'skimage', 'sklearn']
+filenames = [numpy_fn, scipy_fn, skimage_fn, sklearn_fn]
 filenames_long = ['binary_dependencies\\'+fn for fn in filenames]
 urls = ["https://dl.dropboxusercontent.com/u/78754747/binary_dependencies/"+fn for fn in filenames]
 
